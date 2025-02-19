@@ -13,7 +13,7 @@ const Profile = () => {
           throw new Error('No access token found');
         }
 
-        const response = await fetch('https://69d1-154-159-237-210.ngrok-free.app/profile', {
+        const response = await fetch('http://localhost:5000/profile', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
