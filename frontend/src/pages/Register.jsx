@@ -53,7 +53,7 @@ const Register = () => {
     });
 
     try {
-      const response = await fetch('http://localhost:5000/register', {
+      const response = await fetch('https://de1f-154-159-237-210.ngrok-free.app/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
