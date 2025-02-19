@@ -4,8 +4,9 @@ import Home from "./pages/Home";
 import SendMoney from "./pages/SendMoney";
 import ReceiveMoney from "./pages/ReceiveMoney";
 import Transactions from "./pages/Transactions";
-// import Login from "./pages/Login";
-// import Register from "./pages/Register";
+import LoginForm from "./pages/Login";
+import Profile from "./pages/Profile";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Route path="/send" element={<SendMoney />} />
         <Route path="/receive" element={<ReceiveMoney />} />
         <Route path="/transactions" element={<Transactions />} />
-        {/* <Route path="/login" element={<Login />} /> */}
-        {/* <Route path="/register" element={<Register />} /> */}
+        <Route path="/login" element={<LoginForm/>} />
+        <Route path="/profile" element={<Profile/>} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
